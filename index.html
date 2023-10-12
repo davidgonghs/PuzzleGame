@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/game.css" />
+		<script type="text/javascript" src="js/game.js" ></script>
+		
+	</head>
+	<body >
+		<div id="container">
+			<div id="toolbar">
+				<input type="button" name="" value="Start" onclick="ready()"/>
+				<input type="button" name="" value="Simple" onclick="initGame(2)"/>
+				<input type="button" name="" value="Complicated" onclick="initGame(4)"/>
+
+				&nbsp;&nbsp;
+				<img src="img/1.jpg" onclick="changePic(this)"/>
+				<img src="img/2.jpg" onclick="changePic(this)"/>
+				<img src="img/3.jpg" onclick="changePic(this)"/>
+			</div>
+			<div id="game_left">
+				<canvas id="puzzle" width="600" height="600" onclick="move(event)"></canvas>
+			</div>
+			<div id="game_right">
+				<img id="cankao" src="img/1.jpg"/>
+			</div>
+		</div>
+	</body>
+</html>
